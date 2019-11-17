@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="Debug|Win32">
+			<Configuration>Debug</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Release|Win32">
+			<Configuration>Release</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\main.cpp"></ClCompile>
+		<ClCompile Include="..\..\..\app\Pig_Function\DebugFuction.c"></ClCompile>
+		<ClCompile Include="..\..\..\board\board.c"></ClCompile>
+		<ClCompile Include="..\..\..\board\clock_config.c"></ClCompile>
+		<ClCompile Include="..\..\..\board\pin_mux.c"></ClCompile>
+		<ClCompile Include="..\..\..\base\system_MIMXRT1052.c"></ClCompile>
+		<ClCompile Include="..\..\..\drivers\LQ_drivers\LQ_ADC.c"></ClCompile>
+		<ClCompile Include="..\..\..\drivers\LQ_drivers\LQ_Encoder.c"></ClCompile>
+		<ClCompile Include="..\..\..\drivers\LQ_drivers\LQ_IIC.c"></ClCompile>
+		<ClCompile Include="..\..\..\drivers\LQ_drivers\LQ_KEY.c"></ClCompile>
+		<ClCompile Include="..\..\..\drivers\LQ_drivers\LQ_LED.c"></ClCompile>
+		<ClCompile Include="..\..\..\drivers\LQ_drivers\LQ_MPU6050.c"></ClCompile>
+		<ClCompile Include="..\..\..\drivers\LQ_drivers\LQ_PIT.c"></ClCompile>
+		<ClCompile Include="..\..\..\drivers\LQ_drivers\LQ_PWM.c"></ClCompile>
+		<ClCompile Include="..\..\..\drivers\LQ_drivers\LQ_QTMR.c"></ClCompile>
+		<ClCompile Include="..\..\..\drivers\LQ_drivers\LQ_SPI.c"></ClCompile>
+		<ClCompile Include="..\..\..\drivers\LQ_drivers\LQ_TRNG.c"></ClCompile>
+		<ClCompile Include="..\..\..\drivers\LQ_drivers\LQ_UART.c"></ClCompile>
+		<ClCompile Include="..\..\..\drivers\LQ_drivers\LQ_WDog.c"></ClCompile>
+		<ClCompile Include="..\..\..\drivers\LQ_drivers\sys\AHRS.c"></ClCompile>
+		<ClCompile Include="..\..\..\drivers\LQ_drivers\sys\AP_Math.c"></ClCompile>
+		<ClCompile Include="..\..\..\drivers\LQ_drivers\sys\Inertial_Sensor.c"></ClCompile>
+		<ClCompile Include="..\..\..\drivers\LQ_drivers\LQ_SGP18T.c"></ClCompile>
+		<ClCompile Include="..\..\..\drivers\LQ_drivers\sys\m_systime.c"></ClCompile>
+		<ClCompile Include="..\..\..\drivers\LQ_drivers\sys\status.c"></ClCompile>
+		<ClCompile Include="..\..\..\drivers\Pig_drivers\Pig_SPI.c"></ClCompile>
+		<ClCompile Include="..\..\..\drivers\Pig_drivers\TFTDriver.c"></ClCompile>
+		<ClCompile Include="..\..\..\drivers\Pig_drivers\Pig_UART.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\drivers\fsl_adc.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\drivers\fsl_clock.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\drivers\fsl_common.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\drivers\fsl_csi.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\drivers\fsl_dmamux.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\drivers\fsl_edma.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\drivers\fsl_enc.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\drivers\fsl_flexio.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\drivers\fsl_flexio_spi.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\drivers\fsl_flexio_spi_edma.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\drivers\fsl_gpio.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\drivers\fsl_gpt.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\drivers\fsl_lpi2c.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\drivers\fsl_lpspi.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\drivers\fsl_lpspi_edma.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\drivers\fsl_lpuart.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\drivers\fsl_lpuart_edma.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\drivers\fsl_pit.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\drivers\fsl_pwm.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\drivers\fsl_qtmr.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\drivers\fsl_sccb.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\drivers\fsl_semc.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\drivers\fsl_trng.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\drivers\fsl_usdhc.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\drivers\fsl_wdog.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\drivers\fsl_xbara.c"></ClCompile>
+		<ClCompile Include="..\..\..\rtos\Source\portable\IAR\ARM_CM4F\fsl_tickless_systick.c"></ClCompile>
+		<ClCompile Include="..\..\..\rtos\Source\portable\MemMang\heap_4.c"></ClCompile>
+		<ClCompile Include="..\..\..\rtos\Source\portable\IAR\ARM_CM4F\port.c"></ClCompile>
+		<ClCompile Include="..\..\..\rtos\Source\croutine.c"></ClCompile>
+		<ClCompile Include="..\..\..\rtos\Source\event_groups.c"></ClCompile>
+		<ClCompile Include="..\..\..\rtos\Source\list.c"></ClCompile>
+		<ClCompile Include="..\..\..\rtos\Source\queue.c"></ClCompile>
+		<ClCompile Include="..\..\..\rtos\Source\tasks.c"></ClCompile>
+		<ClCompile Include="..\..\..\rtos\Source\timers.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\utilities\fsl_assert.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\utilities\fsl_debug_console.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\utilities\io\fsl_io.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\utilities\log\fsl_log.c"></ClCompile>
+		<ClCompile Include="..\..\..\fsl\utilities\str\fsl_str.c"></ClCompile>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\..\app\fsl_include.h"></ClInclude>
+		<ClInclude Include="..\..\..\app\include.h"></ClInclude>
+		<ClInclude Include="..\..\..\app\Pig_Function\DebugFunction.h"></ClInclude>
+		<ClInclude Include="..\..\..\board\board.h"></ClInclude>
+		<ClInclude Include="..\..\..\board\clock_config.h"></ClInclude>
+		<ClInclude Include="..\..\..\board\pin_mux.h"></ClInclude>
+		<ClInclude Include="..\..\..\base\system_MIMXRT1052.h"></ClInclude>
+		<ClInclude Include="..\..\..\drivers\LQ_drivers\LQ_ADC.h"></ClInclude>
+		<ClInclude Include="..\..\..\drivers\LQ_drivers\LQ_Encoder.h"></ClInclude>
+		<ClInclude Include="..\..\..\drivers\LQ_drivers\LQ_GPIOmacro.h"></ClInclude>
+		<ClInclude Include="..\..\..\drivers\LQ_drivers\LQ_IIC.h"></ClInclude>
+		<ClInclude Include="..\..\..\drivers\LQ_drivers\LQ_KEY.h"></ClInclude>
+		<ClInclude Include="..\..\..\drivers\LQ_drivers\LQ_LED.h"></ClInclude>
+		<ClInclude Include="..\..\..\drivers\LQ_drivers\LQ_MPU6050.h"></ClInclude>
+		<ClInclude Include="..\..\..\drivers\LQ_drivers\LQ_PIT.h"></ClInclude>
+		<ClInclude Include="..\..\..\drivers\LQ_drivers\LQ_PWM.h"></ClInclude>
+		<ClInclude Include="..\..\..\drivers\LQ_drivers\LQ_QTMR.h"></ClInclude>
+		<ClInclude Include="..\..\..\drivers\LQ_drivers\LQ_SPI.h"></ClInclude>
+		<ClInclude Include="..\..\..\drivers\LQ_drivers\LQ_TRNG.h"></ClInclude>
+		<ClInclude Include="..\..\..\drivers\LQ_drivers\LQ_UART.h"></ClInclude>
+		<ClInclude Include="..\..\..\drivers\LQ_drivers\LQ_WDog.h"></ClInclude>
+		<ClInclude Include="..\..\..\drivers\LQ_drivers\sys\AHRS.h"></ClInclude>
+		<ClInclude Include="..\..\..\drivers\LQ_drivers\sys\AP_Math.h"></ClInclude>
+		<ClInclude Include="..\..\..\drivers\LQ_drivers\sys\Inertial_Sensor.h"></ClInclude>
+		<ClInclude Include="..\..\..\drivers\LQ_drivers\LQ_SGP18T.h"></ClInclude>
+		<ClInclude Include="..\..\..\drivers\LQ_drivers\sys\m_systime.h"></ClInclude>
+		<ClInclude Include="..\..\..\drivers\LQ_drivers\sys\status.h"></ClInclude>
+		<ClInclude Include="..\..\..\app\PORT_CFG.h"></ClInclude>
+		<ClInclude Include="..\..\..\drivers\Pig_drivers\Pig_SPI.h"></ClInclude>
+		<ClInclude Include="..\..\..\drivers\Pig_drivers\TFTDriver.h"></ClInclude>
+		<ClInclude Include="..\..\..\drivers\Pig_drivers\Pig_UART.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\drivers\fsl_adc.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\drivers\fsl_clock.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\drivers\fsl_common.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\drivers\fsl_csi.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\drivers\fsl_dmamux.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\drivers\fsl_edma.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\drivers\fsl_enc.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\drivers\fsl_flexio.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\drivers\fsl_flexio_spi.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\drivers\fsl_flexio_spi_edma.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\drivers\fsl_gpio.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\drivers\fsl_gpt.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\drivers\fsl_iomuxc.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\drivers\fsl_lpi2c.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\drivers\fsl_lpspi.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\drivers\fsl_lpspi_edma.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\drivers\fsl_lpuart.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\drivers\fsl_lpuart_edma.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\drivers\fsl_pit.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\drivers\fsl_pwm.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\drivers\fsl_qtmr.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\drivers\fsl_sccb.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\drivers\fsl_semc.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\drivers\fsl_trng.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\drivers\fsl_usdhc.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\drivers\fsl_wdog.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\drivers\fsl_xbara.h"></ClInclude>
+		<ClInclude Include="..\..\..\rtos\Source\portable\IAR\ARM_CM4F\fsl_tickless_generic.h"></ClInclude>
+		<ClInclude Include="..\..\..\rtos\Source\portable\IAR\ARM_CM4F\portmacro.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\utilities\fsl_debug_console.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\utilities\fsl_debug_console_conf.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\utilities\io\fsl_io.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\utilities\log\fsl_log.h"></ClInclude>
+		<ClInclude Include="..\..\..\fsl\utilities\str\fsl_str.h"></ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\..\base\startup_MIMXRT1052.s"></None>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>b75a70d8-f84b-45ac-49e7-023d77692019</ProjectGuid>
+		<Keyword>Win32Proj</Keyword>
+		<RootNamespace>RT1052WithCPP</RootNamespace>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<LinkIncremental>true</LinkIncremental>
+		<IncludePath>..\..\..\fsl\drivers;..\..\..\fsl\CMSIS\Include;..\..\..\fsl\utilities;..\..\..\fsl\utilities\log;..\..\..\fsl\utilities\io;..\..\..\fsl\utilities\str;..\..\..\base;..\..\..\app;..\..\..\app\Pig_Function;..\..\..\board;..\..\..\drivers\LQ_drivers;..\..\..\drivers\LQ_drivers\sys;..\..\..\drivers\Pig_drivers;..\..\..\rtos;..\..\..\rtos\Source\include;..\..\..\rtos\Source\portable\MemMang;..\..\..\rtos\Source\portable\IAR\ARM_CM4F</IncludePath>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<LinkIncremental>true</LinkIncremental>
+		<IncludePath></IncludePath>
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<ClCompile>
+			<PrecompiledHeader></PrecompiledHeader>
+			<WarningLevel>Level3</WarningLevel>
+			<Optimization>Disabled</Optimization>
+			<PreprocessorDefinitions>DEBUG;SKIP_SYSCLK_INIT;SDRAM_MPU_INIT;CPU_MIMXRT1052DVL6B;PRINTF_FLOAT_ENABLE=0;SCANF_FLOAT_ENABLE=0;XIP_EXTERNAL_FLASH=1;PRINTF_ADVANCED_ENABLE=0;SCANF_ADVANCED_ENABLE=0;SDK_I2C_BASED_COMPONENT_USED=1;XIP_EXTERNAL_FLASH=1;XIP_BOOT_HEADER_ENABLE=1;XIP_BOOT_HEADER_DCD_ENABLE=0;_DLIB_FILE_DESCRIPTOR;__cplusplus</PreprocessorDefinitions>
+		</ClCompile>
+		<Link>
+			<SubSystem></SubSystem>
+			<GenerateDebugInformation>false</GenerateDebugInformation>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<ClCompile>
+			<PrecompiledHeader></PrecompiledHeader>
+			<WarningLevel>Level3</WarningLevel>
+			<Optimization>Disabled</Optimization>
+			<PreprocessorDefinitions>NDEBUG</PreprocessorDefinitions>
+		</ClCompile>
+		<Link>
+			<SubSystem></SubSystem>
+			<GenerateDebugInformation>false</GenerateDebugInformation>
+		</Link>
+	</ItemDefinitionGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"></Import>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"></Import>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"></Import>
+</Project>

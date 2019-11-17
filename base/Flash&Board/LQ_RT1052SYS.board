@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flash_board>
+    <pass>
+        <loader>D:\智能车\麦轮信标\程序\RT1052_cpp\base\Flash&amp;Board\LQ_RT1052SYS.flash</loader>
+        <range>CODE 0x0 0xffffffff</range>
+    </pass>
+</flash_board>

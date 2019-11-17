@@ -1,0 +1,790 @@
+###############################################################################
+#
+# IAR ELF Linker V8.30.1.114/W32 for ARM                  17/Nov/2019  12:45:46
+# Copyright 2007-2018 IAR Systems AB.
+#
+#    Output file  =  
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Exe\RT1052WithCPP.out
+#    Map file     =  
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\List\RT1052WithCPP.map
+#    Command line =  
+#        -f C:\Users\zhuzh\AppData\Local\Temp\EWC3AE.tmp
+#        (D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\AHRS.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\AP_Math.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\board.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\clock_config.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\croutine.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\DebugFuction.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\event_groups.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_adc.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_assert.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_clock.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_common.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_csi.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_debug_console.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_dmamux.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_edma.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_enc.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_flexio.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_flexio_spi.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_flexio_spi_edma.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_gpio.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_gpt.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_io.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_log.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_lpi2c.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_lpspi.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_lpspi_edma.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_lpuart.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_lpuart_edma.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_pit.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_pwm.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_qtmr.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_sccb.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_semc.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_str.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_tickless_systick.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_trng.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_usdhc.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_wdog.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\fsl_xbara.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\heap_4.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\Inertial_Sensor.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\list.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\LQ_ADC.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\LQ_Encoder.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\LQ_IIC.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\LQ_KEY.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\LQ_LED.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\LQ_MPU6050.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\LQ_PIT.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\LQ_PWM.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\LQ_QTMR.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\LQ_SGP18T.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\LQ_SPI.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\LQ_TRNG.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\LQ_UART.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\LQ_WDog.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\m_systime.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\main.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\Pig_SPI.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\Pig_UART.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\pin_mux.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\port.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\queue.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\startup_MIMXRT1052.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\status.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\system_MIMXRT1052.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\tasks.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\TFTDriver.o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj\timers.o
+#        --no_out_extension -o
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Exe\RT1052WithCPP.out
+#        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb
+#        --map
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\List\RT1052WithCPP.map
+#        --config
+#        D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\..\..\base\icf\LQ_RT1052QSPI_Boot.icf
+#        --semihosting --entry __iar_program_start "C:\Program Files (x86)\IAR
+#        Systems\Embedded Workbench
+#        8.1\arm\CMSIS\Lib\IAR\iar_cortexM7lf_math.a" --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor        = *
+__CPP_Exceptions = Used
+__CPP_Language   = C++14
+__Heap_Handler   = DLMalloc
+__SystemLibrary  = DLib
+__dlib_version   = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The advanced heap was selected because the application calls memory
+allocation functions outside of system library functions, and there
+are calls to deallocation functions in the application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x6000'2000 { ro section .intvec };
+"P1":  place in [from 0x6000'2000 to 0x6000'23ff] |
+                [from 0x6000'2400 to 0x63ff'ffff] { ro };
+define block RW { first rw, section m_usb_dma_init_data };
+"P2":  place in [from 0x2000'0000 to 0x2001'7fff] { block RW };
+define block ZI
+   with alignment = 32 { first zi, section m_usb_dma_noninit_data };
+"P3":  place in [from 0x2000'0000 to 0x2001'7fff] { block ZI };
+define block CSTACK with size = 32K, alignment = 8 { };
+"P5":  place in [from 0x2001'8000 to 0x2001'ffff] { block CSTACK };
+initialize by copy { rw, section .textrw };
+
+No sections matched the following patterns:
+
+  ro section .boot_hdr.boot_data  in "A3"
+  ro section .boot_hdr.dcd_data   in "A4"
+  section .boot_hdr.conf          in "A1"
+  section .boot_hdr.ivt           in "A2"
+  section NonCacheable            in block NCACHE_VAR
+  section NonCacheable.init       in block NCACHE_VAR
+  section m_usb_dma_init_data     in block RW
+  section m_usb_dma_noninit_data  in block ZI
+
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"P2-P3", part 1 of 2:                        0x24
+  RW                          0x2000'0000    0x24  <Block>
+    RW-1                      0x2000'0000    0x24  <Init block>
+      .data          inited   0x2000'0000    0x20  Pig_UART.o [1]
+      .data          inited   0x2000'0020     0x4  system_MIMXRT1052.o [1]
+                            - 0x2000'0024    0x24
+
+"P2-P3", part 2 of 2:                       0x13c
+  ZI                          0x2000'0040   0x13c  <Block>
+    .bss             zero     0x2000'0040     0x1  DebugFuction.o [1]
+    .bss             zero     0x2000'0044     0x4  fsl_clock.o [1]
+    .bss             zero     0x2000'0048     0x4  fsl_clock.o [1]
+    .bss             zero     0x2000'004c    0x80  fsl_edma.o [1]
+    .bss             zero     0x2000'00cc     0x1  fsl_edma.o [1]
+    .bss             zero     0x2000'00d0     0x8  fsl_io.o [1]
+    .bss             zero     0x2000'00d8    0x48  fsl_lpuart_edma.o [1]
+    .bss             zero     0x2000'0120     0x8  LQ_UART.o [1]
+    .bss             zero     0x2000'0128    0x1c  LQ_UART.o [1]
+    .bss             zero     0x2000'0144    0x18  LQ_UART.o [1]
+    .bss             zero     0x2000'015c    0x18  LQ_UART.o [1]
+    .bss             zero     0x2000'0174     0x8  Pig_UART.o [1]
+                            - 0x2000'017c   0x13c
+
+"P5":                                      0x8000
+  CSTACK                      0x2001'8000  0x8000  <Block>
+    CSTACK           uninit   0x2001'8000  0x8000  <Block tail>
+                            - 0x2002'0000  0x8000
+
+"A0":                                       0x400
+  .intvec            ro code  0x6000'2000   0x400  startup_MIMXRT1052.o [1]
+                            - 0x6000'2400   0x400
+
+"P1":                                      0x522e
+  .text              ro code  0x6000'2400   0xe4c  Pig_UART.o [1]
+  .text              ro code  0x6000'324c    0x18  fsl_assert.o [1]
+  .text              ro code  0x6000'3264   0x2f8  fsl_clock.o [1]
+  .text              ro code  0x6000'355c   0x4c8  fsl_lpuart.o [1]
+  .text              ro code  0x6000'3a24    0xa8  fsl_dmamux.o [1]
+  .text              ro code  0x6000'3acc   0x91c  fsl_edma.o [1]
+  .text              ro code  0x6000'43e8   0x2d4  fsl_lpuart_edma.o [1]
+  .text              ro code  0x6000'46bc    0xaa  fsl_debug_console.o [1]
+  .text              ro code  0x6000'4766    0x3a  zero_init3.o [5]
+  .text              ro code  0x6000'47a0    0x86  ABImemcpy.o [5]
+  .rodata            const    0x6000'4826     0x2  fsl_dmamux.o [1]
+  .text              ro code  0x6000'4828   0x230  I64DivMod.o [5]
+  .text              ro code  0x6000'4a58    0x66  ABImemset.o [5]
+  .rodata            const    0x6000'4abe     0x2  fsl_edma.o [1]
+  .text              ro code  0x6000'4ac0    0x70  fsl_log.o [1]
+  .text              ro code  0x6000'4b30     0x6  ABImemclr4.o [5]
+  .text              ro code  0x6000'4b36   0x2d2  fsl_str.o [1]
+  .text              ro code  0x6000'4e08     0x2  I64DivZer.o [5]
+  .text              ro code  0x6000'4e0a     0x2  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'4e0c    0xc8  fsl_io.o [1]
+  .text              ro code  0x6000'4ed4    0x32  ABImemset48.o [5]
+  .text              ro code  0x6000'4f06     0x2  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'4f08    0x36  strlen.o [5]
+  .text              ro code  0x6000'4f3e     0x2  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'4f40   0xa04  LQ_UART.o [1]
+  .text              ro code  0x6000'5944   0x5b8  pin_mux.o [1]
+  .text              ro code  0x6000'5efc   0x40c  clock_config.o [1]
+  .text              ro code  0x6000'6308   0x300  board.o [1]
+  .text              ro code  0x6000'6608   0x12a  system_MIMXRT1052.o [1]
+  .text              ro code  0x6000'6732     0x2  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'6734    0xac  main.o [1]
+  .text              ro code  0x6000'67e0    0x38  DebugFuction.o [1]
+  .rodata            const    0x6000'6818    0x7c  fsl_edma.o [1]
+  .rodata            const    0x6000'6894    0x78  fsl_edma.o [1]
+  .rodata            const    0x6000'690c    0x5c  LQ_UART.o [1]
+  .rodata            const    0x6000'6968    0x5c  Pig_UART.o [1]
+  .rodata            const    0x6000'69c4    0x54  fsl_debug_console.o [1]
+  .rodata            const    0x6000'6a18    0x50  fsl_lpuart_edma.o [1]
+  .rodata            const    0x6000'6a68    0x50  Pig_UART.o [1]
+  .rodata            const    0x6000'6ab8    0x4c  fsl_dmamux.o [1]
+  .rodata            const    0x6000'6b04    0x4c  fsl_io.o [1]
+  .rodata            const    0x6000'6b50    0x4c  fsl_log.o [1]
+  .rodata            const    0x6000'6b9c    0x4c  fsl_lpuart.o [1]
+  .rodata            const    0x6000'6be8    0x4c  Pig_UART.o [1]
+  .rodata            const    0x6000'6c34    0x48  clock_config.o [1]
+  .rodata            const    0x6000'6c7c    0x48  fsl_dmamux.o [1]
+  .rodata            const    0x6000'6cc4    0x48  fsl_edma.o [1]
+  .rodata            const    0x6000'6d0c    0x48  fsl_edma.o [1]
+  .rodata            const    0x6000'6d54    0x48  fsl_lpuart.o [1]
+  .rodata            const    0x6000'6d9c    0x48  LQ_UART.o [1]
+  .rodata            const    0x6000'6de4    0x48  Pig_UART.o [1]
+  .rodata            const    0x6000'6e2c    0x48  pin_mux.o [1]
+  .rodata            const    0x6000'6e74    0x40  fsl_dmamux.o [1]
+  .rodata            const    0x6000'6eb4    0x40  fsl_edma.o [1]
+  .rodata            const    0x6000'6ef4    0x40  fsl_lpuart.o [1]
+  .rodata            const    0x6000'6f34    0x3c  fsl_edma.o [1]
+  .rodata            const    0x6000'6f70    0x3c  Pig_UART.o [1]
+  .rodata            const    0x6000'6fac    0x3c  Pig_UART.o [1]
+  .rodata            const    0x6000'6fe8    0x2c  fsl_assert.o [1]
+  .text              ro code  0x6000'7014    0x2c  copy_init3.o [5]
+  .rodata            const    0x6000'7040    0x28  fsl_edma.o [1]
+  .text              ro code  0x6000'7068    0x28  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'7090    0x28  data_init.o [5]
+  .rodata            const    0x6000'70b8    0x24  fsl_edma.o [1]
+  .rodata            const    0x6000'70dc    0x24  fsl_lpuart.o [1]
+  Initializer bytes  const    0x6000'7100    0x24  <for RW-1>
+  .text              ro code  0x6000'7124    0x22  fpinit_M.o [4]
+  .iar.init_table    const    0x6000'7148    0x24  - Linker created -
+  .text              ro code  0x6000'716c     0x2  startup_MIMXRT1052.o [1]
+  .rodata            const    0x6000'7170    0x20  fsl_edma.o [1]
+  .rodata            const    0x6000'7190    0x20  fsl_lpuart.o [1]
+  .rodata            const    0x6000'71b0    0x20  fsl_lpuart.o [1]
+  .text              ro code  0x6000'71d0    0x1e  cmain.o [5]
+  .text              ro code  0x6000'71ee     0x4  low_level_init.o [2]
+  .text              ro code  0x6000'71f2     0x4  exit.o [2]
+  .text              ro code  0x6000'71f6     0x2  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'71f8     0xa  cexit.o [5]
+  .text              ro code  0x6000'7202     0x2  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'7204    0x14  exit.o [6]
+  .rodata            const    0x6000'7218    0x1c  Pig_UART.o [1]
+  .rodata            const    0x6000'7234    0x1c  Pig_UART.o [1]
+  .rodata            const    0x6000'7250    0x1c  Pig_UART.o [1]
+  .rodata            const    0x6000'726c    0x1c  Pig_UART.o [1]
+  .rodata            const    0x6000'7288    0x1c  Pig_UART.o [1]
+  .rodata            const    0x6000'72a4    0x18  clock_config.o [1]
+  .rodata            const    0x6000'72bc    0x18  fsl_lpuart.o [1]
+  .rodata            const    0x6000'72d4    0x18  fsl_lpuart_edma.o [1]
+  .rodata            const    0x6000'72ec    0x18  fsl_lpuart_edma.o [1]
+  .rodata            const    0x6000'7304    0x18  LQ_UART.o [1]
+  .rodata            const    0x6000'731c    0x18  Pig_UART.o [1]
+  .rodata            const    0x6000'7334    0x14  fsl_lpuart.o [1]
+  .rodata            const    0x6000'7348    0x10  fsl_clock.o [1]
+  .rodata            const    0x6000'7358    0x10  fsl_debug_console.o [1]
+  .rodata            const    0x6000'7368    0x10  fsl_edma.o [1]
+  .rodata            const    0x6000'7378    0x10  fsl_edma.o [1]
+  .rodata            const    0x6000'7388    0x10  fsl_edma.o [1]
+  .rodata            const    0x6000'7398    0x10  fsl_lpuart_edma.o [1]
+  .rodata            const    0x6000'73a8    0x10  LQ_UART.o [1]
+  .rodata            const    0x6000'73b8    0x10  Pig_UART.o [1]
+  .rodata            const    0x6000'73c8     0xc  clock_config.o [1]
+  .rodata            const    0x6000'73d4     0xc  fsl_dmamux.o [1]
+  .rodata            const    0x6000'73e0     0xc  fsl_edma.o [1]
+  .rodata            const    0x6000'73ec     0xc  fsl_edma.o [1]
+  .rodata            const    0x6000'73f8     0xc  fsl_edma.o [1]
+  .rodata            const    0x6000'7404     0xc  fsl_edma.o [1]
+  .rodata            const    0x6000'7410     0xc  fsl_log.o [1]
+  .rodata            const    0x6000'741c     0xc  fsl_lpuart.o [1]
+  .rodata            const    0x6000'7428     0xc  fsl_lpuart_edma.o [1]
+  .rodata            const    0x6000'7434     0xc  LQ_UART.o [1]
+  .rodata            const    0x6000'7440     0xc  main.o [1]
+  .rodata            const    0x6000'744c     0xc  Pig_UART.o [1]
+  .rodata            const    0x6000'7458     0xc  pin_mux.o [1]
+  .text              ro code  0x6000'7464     0xc  cstartup_M.o [5]
+  .rodata            const    0x6000'7470     0x8  fsl_io.o [1]
+  .rodata            const    0x6000'7478     0x8  fsl_lpuart.o [1]
+  .rodata            const    0x6000'7480     0x8  fsl_lpuart.o [1]
+  .rodata            const    0x6000'7488     0x8  fsl_lpuart_edma.o [1]
+  .rodata            const    0x6000'7490     0x8  fsl_lpuart_edma.o [1]
+  .rodata            const    0x6000'7498     0x8  fsl_lpuart_edma.o [1]
+  .text              ro code  0x6000'74a0     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'74a8     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'74b0     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'74b8     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'74c0     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'74c8     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'74d0     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'74d8     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'74e0     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'74e8     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'74f0     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'74f8     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'7500     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'7508     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'7510     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'7518     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'7520     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'7528     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'7530     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'7538     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'7540     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'7548     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'7550     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'7558     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'7560     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'7568     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'7570     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'7578     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'7580     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'7588     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'7590     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'7598     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'75a0     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'75a8     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'75b0     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'75b8     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'75c0     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'75c8     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'75d0     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'75d8     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'75e0     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'75e8     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'75f0     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'75f8     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'7600     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'7608     0x8  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'7610     0x8  startup_MIMXRT1052.o [1]
+  .rodata            const    0x6000'7618     0x4  clock_config.o [1]
+  .rodata            const    0x6000'761c     0x4  fsl_dmamux.o [1]
+  .rodata            const    0x6000'7620     0x4  fsl_edma.o [1]
+  .text              ro code  0x6000'7624     0x4  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'7628     0x2  startup_MIMXRT1052.o [1]
+  .text              ro code  0x6000'762a     0x2  startup_MIMXRT1052.o [1]
+  .rodata            const    0x6000'762c     0x1  clock_config.o [1]
+  .rodata            const    0x6000'762d     0x1  unwind_debug.o [6]
+  .rodata            const    0x6000'762e     0x0  zero_init3.o [5]
+  .rodata            const    0x6000'762e     0x0  copy_init3.o [5]
+                            - 0x6000'762e  0x522e
+
+Unused ranges:
+
+         From           To        Size
+         ----           --        ----
+  0x2000'0024  0x2000'003f        0x1c
+  0x2000'017c  0x2001'7fff    0x1'7e84
+  0x6000'762e  0x63ff'ffff  0x3ff'89d2
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x13c:
+          0x2000'0040  0x13c
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x24:
+          0x6000'7100   0x24
+    1 destination range, total size 0x24:
+          0x2000'0000   0x24
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                ro code  ro data  rw data
+    ------                -------  -------  -------
+command line/config:
+    -----------------------------------------------
+    Total:
+
+D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj: [1]
+    DebugFuction.o             56                 1
+    LQ_UART.o               2 564      216       84
+    Pig_UART.o              3 660      664       40
+    board.o                   768
+    clock_config.o          1 036      113
+    fsl_assert.o               24       44
+    fsl_clock.o               760       16        8
+    fsl_debug_console.o       170      100
+    fsl_dmamux.o              168      230
+    fsl_edma.o              2 332      722      129
+    fsl_io.o                  200       84        8
+    fsl_log.o                 112       88
+    fsl_lpuart.o            1 224      384
+    fsl_lpuart_edma.o         724      180       72
+    fsl_str.o                 722
+    main.o                    172       12
+    pin_mux.o               1 464       84
+    startup_MIMXRT1052.o    1 462
+    system_MIMXRT1052.o       298        4        4
+    -----------------------------------------------
+    Total:                 17 916    2 941      346
+
+dl7M_tlf.a: [2]
+    exit.o                      4
+    low_level_init.o            4
+    -----------------------------------------------
+    Total:                      8
+
+dlpp7M_tl_fc.a: [3]
+    -----------------------------------------------
+    Total:
+
+m7M_tlv.a: [4]
+    fpinit_M.o                 34
+    -----------------------------------------------
+    Total:                     34
+
+rt7M_tl.a: [5]
+    ABImemclr4.o                6
+    ABImemcpy.o               134
+    ABImemset.o               102
+    ABImemset48.o              50
+    I64DivMod.o               560
+    I64DivZer.o                 2
+    cexit.o                    10
+    cmain.o                    30
+    copy_init3.o               44
+    cstartup_M.o               12
+    data_init.o                40
+    strlen.o                   54
+    zero_init3.o               58
+    -----------------------------------------------
+    Total:                  1 102
+
+shb_l.a: [6]
+    exit.o                     20
+    unwind_debug.o                       1
+    -----------------------------------------------
+    Total:                     20        1
+
+    Gaps                                 4        6
+    Linker created                      36   32 768
+---------------------------------------------------
+    Grand Total:           19 080    2 982   33 120
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base   0x6000'7148          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x6000'716c          --   Gb  - Linker created -
+?main                   0x6000'71d1         Code  Gb  cmain.o [5]
+BOARD_BootClockRUN      0x6000'5fd9  0x22c  Code  Gb  clock_config.o [1]
+BOARD_ConfigMPU         0x6000'6519   0x74  Code  Gb  board.o [1]
+BOARD_DebugConsoleSrcFreq
+                        0x6000'64bf   0x42  Code  Gb  board.o [1]
+BOARD_InitDEBUG_UARTPins()
+                        0x6000'59bf   0x64  Code  Gb  pin_mux.o [1]
+BOARD_InitDebugConsole  0x6000'6501   0x18  Code  Gb  board.o [1]
+BOARD_InitSDRAMPins()   0x6000'5a3d  0x384  Code  Gb  pin_mux.o [1]
+CLOCK_GetPllFreq        0x6000'3309  0x1c6  Code  Gb  fsl_clock.o [1]
+CLOCK_InitArmPll        0x6000'32bf   0x18  Code  Gb  fsl_clock.o [1]
+CLOCK_InitSysPfd        0x6000'34cf   0x3a  Code  Gb  fsl_clock.o [1]
+CLOCK_InitSysPll        0x6000'32d7   0x18  Code  Gb  fsl_clock.o [1]
+CLOCK_InitUsb1Pll       0x6000'32ef   0x1a  Code  Gb  fsl_clock.o [1]
+CSTACK$$Base            0x2001'8000          --   Gb  - Linker created -
+CSTACK$$Limit           0x2002'0000          --   Gb  - Linker created -
+DMAMUX_Init             0x6000'3a9d   0x12  Code  Gb  fsl_dmamux.o [1]
+DMASendStatus           0x2000'0040    0x1  Data  Gb  DebugFuction.o [1]
+DbgConsole_Init         0x6000'46bd   0x30  Code  Gb  fsl_debug_console.o [1]
+DbgConsole_Printf       0x6000'46f5   0x32  Code  Gb  fsl_debug_console.o [1]
+EDMA_AbortTransfer      0x6000'4371   0x3e  Code  Gb  fsl_edma.o [1]
+EDMA_CreateHandle       0x6000'3e85   0xac  Code  Gb  fsl_edma.o [1]
+EDMA_GetDefaultConfig   0x6000'3cc9   0x2c  Code  Gb  fsl_edma.o [1]
+EDMA_Init               0x6000'3c75   0x54  Code  Gb  fsl_edma.o [1]
+EDMA_InstallTCD         0x6000'3b99   0xdc  Code  Gb  fsl_edma.o [1]
+EDMA_PrepareTransfer    0x6000'3f61  0x190  Code  Gb  fsl_edma.o [1]
+EDMA_SetCallback        0x6000'3f31   0x24  Code  Gb  fsl_edma.o [1]
+EDMA_SetTransferConfig  0x6000'3cf5   0x62  Code  Gb  fsl_edma.o [1]
+EDMA_StartTransfer      0x6000'42f5   0x74  Code  Gb  fsl_edma.o [1]
+EDMA_SubmitTransfer     0x6000'410d  0x1e4  Code  Gb  fsl_edma.o [1]
+EDMA_TcdReset           0x6000'3d57   0x66  Code  Gb  fsl_edma.o [1]
+EDMA_TcdSetTransferConfig
+                        0x6000'3dbd   0xb4  Code  Gb  fsl_edma.o [1]
+Get_StartInstance()::StartInstanceNum
+                        0x2000'00cc    0x1  Data  Lc  fsl_edma.o [1]
+IO_Init                 0x6000'4e41   0x54  Code  Gb  fsl_io.o [1]
+IO_Transfer             0x6000'4e95   0x32  Code  Gb  fsl_io.o [1]
+LOG_Init                0x6000'4ac1   0x1a  Code  Gb  fsl_log.o [1]
+LOG_Pop                 0x6000'4aff   0x28  Code  Gb  fsl_log.o [1]
+LOG_Push                0x6000'4adb   0x24  Code  Gb  fsl_log.o [1]
+LPUART1_UserCallback(LPUART_Type *, _lpuart_edma_handle *, int, void *)
+                        0x6000'26cd   0x10  Code  Gb  Pig_UART.o [1]
+LPUART_ClearStatusFlags
+                        0x6000'38a5   0x4c  Code  Gb  fsl_lpuart.o [1]
+LPUART_EnableInterrupts
+                        0x6000'386d   0x28  Code  Gb  fsl_lpuart.o [1]
+LPUART_GetDefaultConfig
+                        0x6000'3811   0x5c  Code  Gb  fsl_lpuart.o [1]
+LPUART_GetInstance(LPUART_Type *)
+                        0x6000'35c1   0x32  Code  Gb  fsl_lpuart.o [1]
+LPUART_GetStatusFlags   0x6000'3895   0x10  Code  Gb  fsl_lpuart.o [1]
+LPUART_Init             0x6000'35f3  0x21e  Code  Gb  fsl_lpuart.o [1]
+LPUART_ReadBlocking     0x6000'3929   0xbe  Code  Gb  fsl_lpuart.o [1]
+LPUART_SendEDMA         0x6000'4547   0xc0  Code  Gb  fsl_lpuart_edma.o [1]
+LPUART_TransferAbortReceiveEDMA
+                        0x6000'464b   0x44  Code  Gb  fsl_lpuart_edma.o [1]
+LPUART_TransferAbortSendEDMA
+                        0x6000'4607   0x44  Code  Gb  fsl_lpuart_edma.o [1]
+LPUART_TransferCreateHandleEDMA
+                        0x6000'44b5   0x92  Code  Gb  fsl_lpuart_edma.o [1]
+LPUART_UserCallback(LPUART_Type *, _lpuart_edma_handle *, int, void *)
+                        0x6000'5785    0xe  Code  Gb  LQ_UART.o [1]
+LPUART_WriteBlocking    0x6000'38f1   0x38  Code  Gb  fsl_lpuart.o [1]
+LQ_GetUartSrcFreq()     0x6000'520d   0x42  Code  Gb  LQ_UART.o [1]
+LQ_UART_Init(LPUART_Type *, unsigned int)
+                        0x6000'524f  0x530  Code  Gb  LQ_UART.o [1]
+Pig_UART::DMAFunctionInit(int, int)
+                        0x6000'3045   0x82  Code  Gb  Pig_UART.o [1]
+Pig_UART::FunctionInit(unsigned int)
+                        0x6000'2ead  0x18c  Code  Gb  Pig_UART.o [1]
+Pig_UART::GetUartSrcFreq()
+                        0x6000'26dd   0x42  Code  Gb  Pig_UART.o [1]
+Pig_UART::InterruptPriorityList
+                        0x2000'0000   0x20  Data  Gb  Pig_UART.o [1]
+Pig_UART::Pig_UART(LPUART_Type *, unsigned int, PORT_t, PORT_t, UARTUsedMode_t, int, int)
+                        0x6000'271f   0xa6  Code  Gb  Pig_UART.o [1]
+Pig_UART::PortInit(PORT_t, PORT_t)
+                        0x6000'27c5  0x6d4  Code  Gb  Pig_UART.o [1]
+RW$$Base                0x2000'0000          --   Gb  - Linker created -
+RW$$Limit               0x2000'0024          --   Gb  - Linker created -
+Region$$Table$$Base     0x6000'7148          --   Gb  - Linker created -
+Region$$Table$$Limit    0x6000'716c          --   Gb  - Linker created -
+StrFormatPrintf         0x6000'4bc1  0x248  Code  Gb  fsl_str.o [1]
+SystemCoreClock         0x2000'0020    0x4  Data  Gb  system_MIMXRT1052.o [1]
+SystemInit              0x6000'6685   0x78  Code  Gb  system_MIMXRT1052.o [1]
+UARTDMAStatusMap        0x2000'0174    0x8  Data  Gb  Pig_UART.o [1]
+UART_DMA_Init()         0x6000'57a1   0x78  Code  Gb  LQ_UART.o [1]
+UART_Put_Buff_DMA(unsigned char *, unsigned char)
+                        0x6000'67e1   0x28  Code  Gb  DebugFuction.o [1]
+ZI$$Base                0x2000'0040          --   Gb  - Linker created -
+ZI$$Limit               0x2000'017c          --   Gb  - Linker created -
+[local to LQ_UART_c]::CLOCK_ControlGate(_clock_ip_name, _clock_gate_value)
+                        0x6000'5103   0x46  Code  Lc  LQ_UART.o [1]
+[local to LQ_UART_c]::CLOCK_EnableClock(_clock_ip_name)
+                        0x6000'5149    0xc  Code  Lc  LQ_UART.o [1]
+[local to LQ_UART_c]::CLOCK_GetDiv(_clock_div)
+                        0x6000'50d9   0x2a  Code  Lc  LQ_UART.o [1]
+[local to LQ_UART_c]::CLOCK_GetMux(_clock_mux)
+                        0x6000'503f   0x2a  Code  Lc  LQ_UART.o [1]
+[local to LQ_UART_c]::CLOCK_GetOscFreq()
+                        0x6000'5155   0x18  Code  Lc  LQ_UART.o [1]
+[local to LQ_UART_c]::CLOCK_SetDiv(_clock_div, unsigned int)
+                        0x6000'5069   0x70  Code  Lc  LQ_UART.o [1]
+[local to LQ_UART_c]::CLOCK_SetMux(_clock_mux, unsigned int)
+                        0x6000'4fcf   0x70  Code  Lc  LQ_UART.o [1]
+[local to LQ_UART_c]::DMAMUX_EnableChannel(DMAMUX_Type *, unsigned int)
+                        0x6000'51b1   0x2a  Code  Lc  LQ_UART.o [1]
+[local to LQ_UART_c]::DMAMUX_SetSource(DMAMUX_Type *, unsigned int, unsigned int)
+                        0x6000'51db   0x32  Code  Lc  LQ_UART.o [1]
+[local to LQ_UART_c]::EnableIRQ(IRQn)
+                        0x6000'516d   0x1c  Code  Lc  LQ_UART.o [1]
+[local to LQ_UART_c]::IOMUXC_SetPinConfig(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int)
+                        0x6000'51a5    0xc  Code  Lc  LQ_UART.o [1]
+[local to LQ_UART_c]::IOMUXC_SetPinMux(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int)
+                        0x6000'5189   0x1c  Code  Lc  LQ_UART.o [1]
+[local to LQ_UART_c]::NVIC_EncodePriority(unsigned int, unsigned int, unsigned int)
+                        0x6000'4f93   0x3c  Code  Lc  LQ_UART.o [1]
+[local to LQ_UART_c]::__NVIC_EnableIRQ(IRQn)
+                        0x6000'4f4d   0x1e  Code  Lc  LQ_UART.o [1]
+[local to LQ_UART_c]::__NVIC_GetPriorityGrouping()
+                        0x6000'4f41    0xc  Code  Lc  LQ_UART.o [1]
+[local to LQ_UART_c]::__NVIC_SetPriority(IRQn, unsigned int)
+                        0x6000'4f6b   0x28  Code  Lc  LQ_UART.o [1]
+[local to Pig_UART_c]::CLOCK_ControlGate(_clock_ip_name, _clock_gate_value)
+                        0x6000'25c3   0x46  Code  Lc  Pig_UART.o [1]
+[local to Pig_UART_c]::CLOCK_EnableClock(_clock_ip_name)
+                        0x6000'2609    0xc  Code  Lc  Pig_UART.o [1]
+[local to Pig_UART_c]::CLOCK_GetDiv(_clock_div)
+                        0x6000'2599   0x2a  Code  Lc  Pig_UART.o [1]
+[local to Pig_UART_c]::CLOCK_GetMux(_clock_mux)
+                        0x6000'24ff   0x2a  Code  Lc  Pig_UART.o [1]
+[local to Pig_UART_c]::CLOCK_GetOscFreq()
+                        0x6000'2615   0x18  Code  Lc  Pig_UART.o [1]
+[local to Pig_UART_c]::CLOCK_SetDiv(_clock_div, unsigned int)
+                        0x6000'2529   0x70  Code  Lc  Pig_UART.o [1]
+[local to Pig_UART_c]::CLOCK_SetMux(_clock_mux, unsigned int)
+                        0x6000'248f   0x70  Code  Lc  Pig_UART.o [1]
+[local to Pig_UART_c]::DMAMUX_EnableChannel(DMAMUX_Type *, unsigned int)
+                        0x6000'2671   0x2a  Code  Lc  Pig_UART.o [1]
+[local to Pig_UART_c]::DMAMUX_SetSource(DMAMUX_Type *, unsigned int, unsigned int)
+                        0x6000'269b   0x32  Code  Lc  Pig_UART.o [1]
+[local to Pig_UART_c]::EnableIRQ(IRQn)
+                        0x6000'262d   0x1c  Code  Lc  Pig_UART.o [1]
+[local to Pig_UART_c]::IOMUXC_SetPinConfig(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int)
+                        0x6000'2665    0xc  Code  Lc  Pig_UART.o [1]
+[local to Pig_UART_c]::IOMUXC_SetPinMux(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int)
+                        0x6000'2649   0x1c  Code  Lc  Pig_UART.o [1]
+[local to Pig_UART_c]::NVIC_EncodePriority(unsigned int, unsigned int, unsigned int)
+                        0x6000'2453   0x3c  Code  Lc  Pig_UART.o [1]
+[local to Pig_UART_c]::__NVIC_EnableIRQ(IRQn)
+                        0x6000'240d   0x1e  Code  Lc  Pig_UART.o [1]
+[local to Pig_UART_c]::__NVIC_GetPriorityGrouping()
+                        0x6000'2401    0xc  Code  Lc  Pig_UART.o [1]
+[local to Pig_UART_c]::__NVIC_SetPriority(IRQn, unsigned int)
+                        0x6000'242b   0x28  Code  Lc  Pig_UART.o [1]
+[local to board_c]::ARM_MPU_Disable()
+                        0x6000'6329   0x22  Code  Lc  board.o [1]
+[local to board_c]::ARM_MPU_Enable(unsigned int)
+                        0x6000'6309   0x20  Code  Lc  board.o [1]
+[local to board_c]::CLOCK_GetDiv(_clock_div)
+                        0x6000'647d   0x2a  Code  Lc  board.o [1]
+[local to board_c]::CLOCK_GetMux(_clock_mux)
+                        0x6000'6453   0x2a  Code  Lc  board.o [1]
+[local to board_c]::CLOCK_GetOscFreq()
+                        0x6000'64a7   0x18  Code  Lc  board.o [1]
+[local to board_c]::SCB_DisableDCache()
+                        0x6000'63f9   0x5a  Code  Lc  board.o [1]
+[local to board_c]::SCB_DisableICache()
+                        0x6000'6379   0x26  Code  Lc  board.o [1]
+[local to board_c]::SCB_EnableDCache()
+                        0x6000'639f   0x5a  Code  Lc  board.o [1]
+[local to board_c]::SCB_EnableICache()
+                        0x6000'634b   0x2e  Code  Lc  board.o [1]
+[local to clock_config_c]::CLOCK_SetDiv(_clock_div, unsigned int)
+                        0x6000'5f65   0x68  Code  Lc  clock_config.o [1]
+[local to clock_config_c]::CLOCK_SetMux(_clock_mux, unsigned int)
+                        0x6000'5efd   0x68  Code  Lc  clock_config.o [1]
+[local to clock_config_c]::CLOCK_SetRtcXtalFreq(unsigned int)
+                        0x6000'5fd3    0x6  Code  Lc  clock_config.o [1]
+[local to clock_config_c]::CLOCK_SetXtalFreq(unsigned int)
+                        0x6000'5fcd    0x6  Code  Lc  clock_config.o [1]
+[local to fsl_clock_c]::CLOCK_GetOscFreq()
+                        0x6000'328b   0x18  Code  Lc  fsl_clock.o [1]
+[local to fsl_clock_c]::CLOCK_GetPllBypassRefClk(CCM_ANALOG_Type *, _clock_pll)
+                        0x6000'32a3   0x1c  Code  Lc  fsl_clock.o [1]
+[local to fsl_clock_c]::CLOCK_IsPllBypassed(CCM_ANALOG_Type *, _clock_pll)
+                        0x6000'3265   0x10  Code  Lc  fsl_clock.o [1]
+[local to fsl_clock_c]::CLOCK_IsPllEnabled(CCM_ANALOG_Type *, _clock_pll)
+                        0x6000'3275   0x16  Code  Lc  fsl_clock.o [1]
+[local to fsl_debug_console_c]::DbgConsole_RelocateLog(char *, int *, char, int)
+                        0x6000'4729   0x3e  Code  Lc  fsl_debug_console.o [1]
+[local to fsl_dmamux_c]::CLOCK_ControlGate(_clock_ip_name, _clock_gate_value)
+                        0x6000'3a25   0x40  Code  Lc  fsl_dmamux.o [1]
+[local to fsl_dmamux_c]::CLOCK_EnableClock(_clock_ip_name)
+                        0x6000'3a65    0xc  Code  Lc  fsl_dmamux.o [1]
+[local to fsl_dmamux_c]::DMAMUX_GetInstance(DMAMUX_Type *)
+                        0x6000'3a71   0x2c  Code  Lc  fsl_dmamux.o [1]
+[local to fsl_edma_c]::CLOCK_ControlGate(_clock_ip_name, _clock_gate_value)
+                        0x6000'3aeb   0x46  Code  Lc  fsl_edma.o [1]
+[local to fsl_edma_c]::CLOCK_EnableClock(_clock_ip_name)
+                        0x6000'3b31    0xc  Code  Lc  fsl_edma.o [1]
+[local to fsl_edma_c]::DisableGlobalIRQ()
+                        0x6000'3b59    0x8  Code  Lc  fsl_edma.o [1]
+[local to fsl_edma_c]::EDMA_GetInstance(DMA_Type *)
+                        0x6000'3b67   0x32  Code  Lc  fsl_edma.o [1]
+[local to fsl_edma_c]::EnableGlobalIRQ(unsigned int)
+                        0x6000'3b61    0x6  Code  Lc  fsl_edma.o [1]
+[local to fsl_edma_c]::EnableIRQ(IRQn)
+                        0x6000'3b3d   0x1c  Code  Lc  fsl_edma.o [1]
+[local to fsl_edma_c]::Get_StartInstance()
+                        0x6000'3e71   0x14  Code  Lc  fsl_edma.o [1]
+[local to fsl_edma_c]::__NVIC_EnableIRQ(IRQn)
+                        0x6000'3acd   0x1e  Code  Lc  fsl_edma.o [1]
+[local to fsl_io_c]::LPUART_EnableRx(LPUART_Type *, bool)
+                        0x6000'4e27   0x1a  Code  Lc  fsl_io.o [1]
+[local to fsl_io_c]::LPUART_EnableTx(LPUART_Type *, bool)
+                        0x6000'4e0d   0x1a  Code  Lc  fsl_io.o [1]
+[local to fsl_lpuart_c]::CLOCK_ControlGate(_clock_ip_name, _clock_gate_value)
+                        0x6000'355d   0x46  Code  Lc  fsl_lpuart.o [1]
+[local to fsl_lpuart_c]::CLOCK_EnableClock(_clock_ip_name)
+                        0x6000'35a3    0xc  Code  Lc  fsl_lpuart.o [1]
+[local to fsl_lpuart_c]::LPUART_SoftwareReset(LPUART_Type *)
+                        0x6000'35af   0x12  Code  Lc  fsl_lpuart.o [1]
+[local to fsl_lpuart_edma_c]::LPUART_EnableRxDMA(LPUART_Type *, bool)
+                        0x6000'4407   0x1a  Code  Lc  fsl_lpuart_edma.o [1]
+[local to fsl_lpuart_edma_c]::LPUART_EnableTxDMA(LPUART_Type *, bool)
+                        0x6000'43ed   0x1a  Code  Lc  fsl_lpuart_edma.o [1]
+[local to fsl_lpuart_edma_c]::LPUART_GetDataRegisterAddress(LPUART_Type *)
+                        0x6000'43e9    0x4  Code  Lc  fsl_lpuart_edma.o [1]
+[local to fsl_lpuart_edma_c]::LPUART_ReceiveEDMACallback(_edma_handle *, void *, bool, unsigned int)
+                        0x6000'446b   0x4a  Code  Lc  fsl_lpuart_edma.o [1]
+[local to fsl_lpuart_edma_c]::LPUART_SendEDMACallback(_edma_handle *, void *, bool, unsigned int)
+                        0x6000'4421   0x4a  Code  Lc  fsl_lpuart_edma.o [1]
+[local to fsl_str_c]::ConvertRadixNumToString(char *, void *, int, int, bool)
+                        0x6000'4b37   0x8a  Code  Lc  fsl_str.o [1]
+[local to main_cpp]::__NVIC_SetPriorityGrouping(unsigned int)
+                        0x6000'6735   0x1a  Code  Lc  main.o [1]
+[local to pin_mux_c]::CLOCK_ControlGate(_clock_ip_name, _clock_gate_value)
+                        0x6000'5945   0x46  Code  Lc  pin_mux.o [1]
+[local to pin_mux_c]::CLOCK_EnableClock(_clock_ip_name)
+                        0x6000'598b    0xc  Code  Lc  pin_mux.o [1]
+[local to pin_mux_c]::IOMUXC_SetPinConfig(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int)
+                        0x6000'59b3    0xc  Code  Lc  pin_mux.o [1]
+[local to pin_mux_c]::IOMUXC_SetPinMux(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int)
+                        0x6000'5997   0x1c  Code  Lc  pin_mux.o [1]
+[local to system_MIMXRT1052_c]::SCB_EnableDCache()
+                        0x6000'6633   0x52  Code  Lc  system_MIMXRT1052.o [1]
+[local to system_MIMXRT1052_c]::SCB_EnableICache()
+                        0x6000'6609   0x2a  Code  Lc  system_MIMXRT1052.o [1]
+__RAM_VECTOR_TABLE_SIZE {Abs}
+                                0x0         Data  Gb  <internal module>
+__VECTOR_RAM {Abs}      0x6000'2000         Data  Gb  <internal module>
+__VECTOR_TABLE {Abs}    0x6000'2000         Data  Gb  <internal module>
+__Vectors               0x6000'2000          --   Gb  startup_MIMXRT1052.o [1]
+__Vectors_End           0x6000'2400         Data  Gb  startup_MIMXRT1052.o [1]
+__Vectors_Size {Abs}          0x400          --   Gb  startup_MIMXRT1052.o [1]
+__aeabi_assert          0x6000'324d   0x18  Code  Gb  fsl_assert.o [1]
+__aeabi_ldiv0           0x6000'4e09         Code  Gb  I64DivZer.o [5]
+__aeabi_memclr4         0x6000'4b31         Code  Gb  ABImemclr4.o [5]
+__aeabi_memcpy4         0x6000'47a1         Code  Gb  ABImemcpy.o [5]
+__aeabi_memcpy8         0x6000'47a1         Code  Gb  ABImemcpy.o [5]
+__aeabi_memset          0x6000'4a59         Code  Gb  ABImemset.o [5]
+__aeabi_uldivmod        0x6000'4829         Code  Gb  I64DivMod.o [5]
+__cmain                 0x6000'71d1         Code  Gb  cmain.o [5]
+__exit                  0x6000'7205   0x14  Code  Gb  exit.o [6]
+__iar_Memset            0x6000'4a59         Code  Gb  ABImemset.o [5]
+__iar_Memset4_word      0x6000'4ed5         Code  Gb  ABImemset48.o [5]
+__iar_Memset8_word      0x6000'4ed5         Code  Gb  ABImemset48.o [5]
+__iar_Memset_word       0x6000'4a61         Code  Gb  ABImemset.o [5]
+__iar_copy_init3        0x6000'7015   0x2c  Code  Gb  copy_init3.o [5]
+__iar_data_init3        0x6000'7091   0x28  Code  Gb  data_init.o [5]
+__iar_debug_exceptions  0x6000'762d    0x1  Data  Gb  unwind_debug.o [6]
+__iar_init_vfp          0x6000'7125         Code  Gb  fpinit_M.o [4]
+__iar_program_start     0x6000'7465         Code  Gb  cstartup_M.o [5]
+__iar_zero_init3        0x6000'4767   0x3a  Code  Gb  zero_init3.o [5]
+__low_level_init        0x6000'71ef    0x4  Code  Gb  low_level_init.o [2]
+__vector_table          0x6000'2000         Data  Gb  startup_MIMXRT1052.o [1]
+__vector_table_0x1c     0x6000'201c         Data  Gb  startup_MIMXRT1052.o [1]
+_call_main              0x6000'71dd         Code  Gb  cmain.o [5]
+_exit                   0x6000'71f9         Code  Gb  cexit.o [5]
+_main                   0x6000'71eb         Code  Gb  cmain.o [5]
+armPllConfig_BOARD_BootClockRUN
+                        0x6000'7618    0x4  Data  Lc  clock_config.o [1]
+exit                    0x6000'71f3    0x4  Code  Gb  exit.o [2]
+g_lpuartEdmaHandle      0x2000'0128   0x1c  Data  Gb  LQ_UART.o [1]
+g_lpuartRxEdmaHandle    0x2000'015c   0x18  Data  Gb  LQ_UART.o [1]
+g_lpuartTxEdmaHandle    0x2000'0144   0x18  Data  Gb  LQ_UART.o [1]
+g_rtcXtalFreq           0x2000'0048    0x4  Data  Gb  fsl_clock.o [1]
+g_xtalFreq              0x2000'0044    0x4  Data  Gb  fsl_clock.o [1]
+m_boot_hdr_conf_start {Abs}
+                        0x6000'0000         Data  Gb  <internal module>
+main                    0x6000'674f   0x7e  Code  Gb  main.o [1]
+s_EDMAHandle            0x2000'004c   0x80  Data  Lc  fsl_edma.o [1]
+s_debugConsoleIO        0x2000'00d0    0x8  Data  Lc  fsl_io.o [1]
+s_dmamuxBases           0x6000'761c    0x4  Data  Lc  fsl_dmamux.o [1]
+s_dmamuxClockName       0x6000'4826    0x2  Data  Lc  fsl_dmamux.o [1]
+s_edmaBases             0x6000'7620    0x4  Data  Lc  fsl_edma.o [1]
+s_edmaClockName         0x6000'4abe    0x2  Data  Lc  fsl_edma.o [1]
+s_edmaIRQNumber         0x6000'6eb4   0x40  Data  Lc  fsl_edma.o [1]
+s_edmaPrivateHandle     0x2000'00d8   0x48  Data  Lc  fsl_lpuart_edma.o [1]
+s_lpuartBases           0x6000'70dc   0x24  Data  Lc  fsl_lpuart.o [1]
+s_lpuartClock           0x6000'7334   0x14  Data  Lc  fsl_lpuart.o [1]
+sendXfer                0x2000'0120    0x8  Data  Gb  LQ_UART.o [1]
+strlen                  0x6000'4f09         Code  Gb  strlen.o [5]
+sysPllConfig_BOARD_BootClockRUN
+                        0x6000'73c8    0xc  Data  Lc  clock_config.o [1]
+usb1PllConfig_BOARD_BootClockRUN
+                        0x6000'762c    0x1  Data  Lc  clock_config.o [1]
+
+
+[1] = D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\Debug\Obj
+[2] = dl7M_tlf.a
+[3] = dlpp7M_tl_fc.a
+[4] = m7M_tlv.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+  19 080 bytes of readonly  code memory
+   2 982 bytes of readonly  data memory
+  33 120 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
