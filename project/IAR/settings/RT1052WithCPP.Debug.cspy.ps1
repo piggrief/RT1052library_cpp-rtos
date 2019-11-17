@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.1\common\bin\cspybat" -f "D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\settings\RT1052WithCPP.Debug.general.xcl" --backend -f "D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\settings\RT1052WithCPP.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.1\common\bin\cspybat" -f "D:\智能车\麦轮信标\程序\RT1052library_cpp-rtos\project\IAR\settings\RT1052WithCPP.Debug.general.xcl" --backend -f "D:\智能车\麦轮信标\程序\RT1052library_cpp-rtos\project\IAR\settings\RT1052WithCPP.Debug.driver.xcl" 
 }
 else
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.1\common\bin\cspybat" -f "D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\settings\RT1052WithCPP.Debug.general.xcl" --debug_file=$debugfile --backend -f "D:\智能车\麦轮信标\程序\RT1052_cpprtos\project\IAR\settings\RT1052WithCPP.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.1\common\bin\cspybat" -f "D:\智能车\麦轮信标\程序\RT1052library_cpp-rtos\project\IAR\settings\RT1052WithCPP.Debug.general.xcl" --debug_file=$debugfile --backend -f "D:\智能车\麦轮信标\程序\RT1052library_cpp-rtos\project\IAR\settings\RT1052WithCPP.Debug.driver.xcl" 
 }

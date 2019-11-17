@@ -66,7 +66,9 @@
 
     1 tab == 4 spaces!
 */
-
+#ifdef __cplusplus
+extern "C" {
+#endif
 #include <stdlib.h>
 #include <string.h>
 
@@ -2552,7 +2554,9 @@ BaseType_t xReturn;
 	}
 
 #endif /* configUSE_QUEUE_SETS */
-
+#ifdef __cplusplus
+}
+#endif
 
 
 

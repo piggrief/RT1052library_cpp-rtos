@@ -66,7 +66,9 @@
 
     1 tab == 4 spaces!
 */
-
+#ifdef __cplusplus
+extern "C" {
+#endif
 /* Standard includes. */
 #include <stdlib.h>
 
@@ -749,4 +751,6 @@ BaseType_t xWaitConditionMet = pdFALSE;
 	}
 
 #endif
-
+#ifdef __cplusplus
+}
+#endif

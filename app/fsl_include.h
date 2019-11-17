@@ -1,8 +1,8 @@
 # ifndef _FSL_INCLUDE_H_
 # define _FSL_INCLUDE_H_
     #include "stdio.h"    
-    #include "cmath"
-    # include "iostream"
+    //#include "cmath"
+    //# include "iostream"
 //SDKµ×²ãÇý¶¯¿â
     #include "fsl_adc.h"
     #include "fsl_cache.h"

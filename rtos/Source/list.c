@@ -66,7 +66,9 @@
 
     1 tab == 4 spaces!
 */
-
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #include <stdlib.h>
 #include "FreeRTOS.h"
@@ -237,4 +239,6 @@ List_t * const pxList = ( List_t * ) pxItemToRemove->pvContainer;
 	return pxList->uxNumberOfItems;
 }
 /*-----------------------------------------------------------*/
-
+#ifdef __cplusplus
+}
+#endif

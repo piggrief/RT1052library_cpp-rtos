@@ -75,6 +75,9 @@
  * See heap_1.c, heap_2.c and heap_3.c for alternative implementations, and the
  * memory management pages of http://www.FreeRTOS.org for more information.
  */
+#ifdef __cplusplus
+extern "C" {
+#endif
 #include <stdlib.h>
 
 /* Defining MPU_WRAPPERS_INCLUDED_FROM_API_FILE prevents task.h from redefining
@@ -218,7 +221,7 @@ void *pvReturn = NULL;
 				{
 					/* Return the memory space pointed to - jumping over the
 					BlockLink_t structure at its start. */
-					pvReturn = ( BlockLink_t * ) ( ( ( uint8_t * ) pxPreviousBlock->pxNextFreeBlock ) + xHeapStructSize );
+					pvReturn = ( void * ) ( ( ( uint8_t * ) pxPreviousBlock->pxNextFreeBlock ) + xHeapStructSize );
 
 					/* This block is being returned for use so must be taken out
 					of the list of free blocks. */
@@ -475,3 +478,6 @@ uint8_t *puc;
 		mtCOVERAGE_TEST_MARKER();
 	}
 }
+#ifdef __cplusplus
+}
+#endif

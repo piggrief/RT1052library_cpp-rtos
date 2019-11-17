@@ -442,7 +442,7 @@
                 </option>
                 <option>
                     <name>IccStaticDestr</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>IccCppInlineSemantics</name>
@@ -641,7 +641,7 @@
                 </option>
                 <option>
                     <name>AUserIncludes</name>
-                    <state></state>
+                    <state>$PROJ_DIR$\..\..\rtos</state>
                 </option>
                 <option>
                     <name>AExtraOptionsCheckV2</name>
@@ -2480,6 +2480,9 @@
                 <name>$PROJ_DIR$\..\..\rtos\Source\portable\IAR\ARM_CM4F\port.c</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\..\..\rtos\Source\portable\IAR\ARM_CM4F\portasm.s</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\..\..\rtos\Source\portable\IAR\ARM_CM4F\portmacro.h</name>
             </file>
         </group>
@@ -2504,6 +2507,9 @@
                 <name>$PROJ_DIR$\..\..\rtos\Source\timers.c</name>
             </file>
         </group>
+        <file>
+            <name>$PROJ_DIR$\..\..\rtos\FreeRTOSConfig.h</name>
+        </file>
     </group>
     <group>
         <name>startup</name>

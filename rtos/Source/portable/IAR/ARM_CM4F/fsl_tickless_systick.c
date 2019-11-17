@@ -66,6 +66,9 @@
 
     1 tab == 4 spaces!
 */
+#ifdef __cplusplus
+extern "C" {
+#endif
 /* Compiler includes. */
 #include <intrinsics.h>
 
@@ -280,3 +283,6 @@ __weak void vPortSetupTimerInterrupt( void )
 	portNVIC_SYSTICK_CURRENT_VALUE_REG = 0UL;
 	portNVIC_SYSTICK_CTRL_REG = ( portNVIC_SYSTICK_CLK_BIT | portNVIC_SYSTICK_INT_BIT | portNVIC_SYSTICK_ENABLE_BIT );
 }
+#ifdef __cplusplus
+}
+#endif

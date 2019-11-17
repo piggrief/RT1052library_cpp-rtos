@@ -66,7 +66,9 @@
 
     1 tab == 4 spaces!
 */
-
+#ifdef __cplusplus
+extern "C" {
+#endif
 #include "FreeRTOS.h"
 #include "task.h"
 #include "croutine.h"
@@ -392,4 +394,6 @@ BaseType_t xReturn;
 }
 
 #endif /* configUSE_CO_ROUTINES == 0 */
-
+#ifdef __cplusplus
+}
+#endif

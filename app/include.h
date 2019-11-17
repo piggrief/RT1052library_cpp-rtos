@@ -18,7 +18,9 @@
     #include "LQ_QTMR.h"      //计时器可用于生成PWM  和 正交解码
     #include "LQ_SPI.h"
     #include "LQ_MPU6050.h"
-
+//RTOS
+    # include "FreeRTOS.h"
+    # include "task.h"
 //Pig二次封装库及驱动库
     #include "Pig_SPI.h"
     #include "TFTDriver.h"

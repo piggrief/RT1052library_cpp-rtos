@@ -66,7 +66,9 @@
 
     1 tab == 4 spaces!
 */
-
+#ifdef __cplusplus
+extern "C" {
+#endif
 /* Standard includes. */
 #include <stdlib.h>
 #include <string.h>
@@ -214,8 +216,7 @@ a statically allocated stack and a dynamically allocated TCB. */
 		/* Find the highest priority list that contains ready tasks. */								\
 		portGET_HIGHEST_PRIORITY( uxTopPriority, uxTopReadyPriority );								\
 		configASSERT( listCURRENT_LIST_LENGTH( &( pxReadyTasksLists[ uxTopPriority ] ) ) > 0 );		\
-		void * pxCurrentTCB_b = (void *)(pxCurrentTCB);\
-                  listGET_OWNER_OF_NEXT_ENTRY( pxCurrentTCB_b, &( pxReadyTasksLists[ uxTopPriority ] ) );		\
+		listGET_OWNER_OF_NEXT_ENTRY( pxCurrentTCB, &( pxReadyTasksLists[ uxTopPriority ] ) );		\
 	} /* taskSELECT_HIGHEST_PRIORITY_TASK() */
 
 	/*-----------------------------------------------------------*/
@@ -370,8 +371,9 @@ typedef tskTCB TCB_t;
 /*lint -e956 A manual analysis and inspection has been used to determine which
 static variables must be declared volatile. */
 
+extern "C"{
 PRIVILEGED_DATA TCB_t * volatile pxCurrentTCB = NULL;
-
+}
 /* Lists for ready and blocked tasks. --------------------*/
 PRIVILEGED_DATA static List_t pxReadyTasksLists[ configMAX_PRIORITIES ];/*< Prioritised ready tasks. */
 PRIVILEGED_DATA static List_t xDelayedTaskList1;						/*< Delayed tasks. */
@@ -3512,8 +3514,7 @@ static void prvCheckTasksWaitingTermination( void )
 
 		if( listCURRENT_LIST_LENGTH( pxList ) > ( UBaseType_t ) 0 )
 		{
-                        void * pxFirstTCB_b = (void *)(pxFirstTCB);
-			listGET_OWNER_OF_NEXT_ENTRY( pxFirstTCB_b, pxList );
+			listGET_OWNER_OF_NEXT_ENTRY( pxFirstTCB, pxList );
 
 			/* Populate an TaskStatus_t structure within the
 			pxTaskStatusArray array for each task that is referenced from
@@ -3521,8 +3522,7 @@ static void prvCheckTasksWaitingTermination( void )
 			meaning of each TaskStatus_t structure member. */
 			do
 			{
-                          void * pxNextTCB_b = (void *)(pxNextTCB);
-				listGET_OWNER_OF_NEXT_ENTRY( pxNextTCB_b, pxList );
+				listGET_OWNER_OF_NEXT_ENTRY( pxNextTCB, pxList );
 				vTaskGetInfo( ( TaskHandle_t ) pxNextTCB, &( pxTaskStatusArray[ uxTask ] ), pdTRUE, eState );
 				uxTask++;
 			} while( pxNextTCB != pxFirstTCB );
@@ -4825,4 +4825,6 @@ const TickType_t xConstTickCount = xTickCount;
 	}
 	#endif
 #endif
-
+#ifdef __cplusplus
+}
+#endif

@@ -315,6 +315,7 @@ typedef struct xLIST
  * \page listGET_OWNER_OF_NEXT_ENTRY listGET_OWNER_OF_NEXT_ENTRY
  * \ingroup LinkedList
  */
+
 #define listGET_OWNER_OF_NEXT_ENTRY( pxTCB, pxList )										\
 {																							\
 List_t * const pxConstList = ( pxList );													\
@@ -325,9 +326,8 @@ List_t * const pxConstList = ( pxList );													\
 	{																						\
 		( pxConstList )->pxIndex = ( pxConstList )->pxIndex->pxNext;						\
 	}																						\
-	( pxTCB ) = ( pxConstList )->pxIndex->pvOwner;											\
+	( pxTCB ) = (TCB_t *)(( pxConstList )->pxIndex->pvOwner);											\
 }
-
 
 /*
  * Access function to obtain the owner of the first entry in a list.  Lists

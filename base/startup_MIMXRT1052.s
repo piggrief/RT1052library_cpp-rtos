@@ -65,6 +65,11 @@
 
         EXTERN  __iar_program_start
         EXTERN  SystemInit
+        
+        EXTERN  vPortSVCHandler           ;@
+        EXTERN  xPortPendSVHandler        ;@
+        EXTERN  xPortSysTickHandler       ;@
+        
         PUBLIC  __vector_table
         PUBLIC  __vector_table_0x1c
         PUBLIC  __Vectors
@@ -87,11 +92,14 @@ __vector_table_0x1c
         DCD     0                                             ;Reserved
         DCD     0                                             ;Reserved
         DCD     0                                             ;Reserved
-        DCD     SVC_Handler                                   ;SVCall Handler
+        ;DCD     SVC_Handler                                   ;SVCall Handler
+        DCD     vPortSVCHandler                                   ;SVCall Handler
         DCD     DebugMon_Handler                              ;Debug Monitor Handler
         DCD     0                                             ;Reserved
-        DCD     PendSV_Handler                                ;PendSV Handler
-        DCD     SysTick_Handler                               ;SysTick Handler
+        ;DCD     PendSV_Handler                                ;PendSV Handler
+        ;DCD     SysTick_Handler                               ;SysTick Handler
+        DCD     xPortPendSVHandler                                ;PendSV Handler
+        DCD     xPortSysTickHandler                               ;SysTick Handler
 
                                                               ;External Interrupts
         DCD     DMA0_DMA16_IRQHandler                         ;DMA channel 0/16 transfer complete

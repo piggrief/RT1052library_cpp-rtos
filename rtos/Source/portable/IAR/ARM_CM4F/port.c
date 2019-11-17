@@ -70,7 +70,9 @@
 /*-----------------------------------------------------------
  * Implementation of functions defined in portable.h for the ARM CM4F port.
  *----------------------------------------------------------*/
-
+#ifdef __cplusplus
+extern "C" {
+#endif
 /* Compiler includes. */
 #include <intrinsics.h>
 
@@ -327,7 +329,7 @@ void vPortExitCritical( void )
 	}
 }
 /*-----------------------------------------------------------*/
-
+extern "C"{
 void xPortSysTickHandler( void )
 {
 	/* The SysTick runs at the lowest interrupt priority, so when this interrupt
@@ -345,6 +347,7 @@ void xPortSysTickHandler( void )
 		}
 	}
 	portENABLE_INTERRUPTS();
+}
 }
 /*-----------------------------------------------------------*/
 
@@ -407,7 +410,9 @@ void xPortSysTickHandler( void )
 	}
 
 #endif /* configASSERT_DEFINED */
-
+#ifdef __cplusplus
+}
+#endif
 
 
 
