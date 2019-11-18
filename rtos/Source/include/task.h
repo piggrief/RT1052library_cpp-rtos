@@ -1406,6 +1406,10 @@ constant. */
 	void *pvTaskGetThreadLocalStoragePointer( TaskHandle_t xTaskToQuery, BaseType_t xIndex ) PRIVILEGED_FUNCTION;
 
 #endif
+        
+#if( configUSE_IDLE_HOOK == 1 )
+extern void vApplicationIdleHook(void);
+#endif
 
 /**
  * task.h
